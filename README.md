@@ -1,134 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>⚡BerMat Bot MD🔥</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Sorpresa para Briyidth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background-color: #0b0b0b;
-      color: #f2f2f2;
-      font-family: 'Share Tech Mono', monospace;
+      background: linear-gradient(to top, #ffdee9, #ffcad4);
+      font-family: 'Quicksand', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
     }
 
-    header {
-      background: linear-gradient(145deg, #8b0000, #ff0000);
-      padding: 40px;
+    .inicio {
       text-align: center;
-      box-shadow: 0 0 20px red;
-      border-bottom: 3px solid #ff5e5e;
+      margin-top: 50px;
     }
 
-    .banner h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
-      color: #fff;
-      text-shadow: 0 0 10px #ff4b4b;
-    }
-
-    .subtitulo {
-      font-size: 1.2rem;
-      color: #ffd6d6;
-      margin-top: 10px;
-    }
-
-    main {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section {
-      background-color: #1a1a1a;
-      border: 2px solid #aa0000;
-      padding: 30px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #aa0000;
-    }
-
-    h2 {
-      font-family: 'Orbitron', sans-serif;
-      color: #ff4b4b;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      text-transform: uppercase;
-    }
-
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
-
-    .resaltado {
-      color: #ff4b4b;
-      font-weight: bold;
-    }
-
-    .redes a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #ff0000;
+    .boton-sorpresa {
+      font-size: 2.2rem;
+      background: radial-gradient(circle, #ff69b4, #ff1493);
       color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      box-shadow: 0 0 5px #ff4b4b;
-      transition: 0.3s;
+      padding: 20px 45px;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      box-shadow: 0 0 25px #ffb6c1;
+      font-family: 'Pacifico', cursive;
+      transition: all 0.4s ease;
+      animation: parpadeo 1.5s infinite;
     }
 
-    .redes a:hover {
-      background-color: #cc0000;
-      box-shadow: 0 0 10px #ff4b4b;
+    .boton-sorpresa:hover {
+      background: radial-gradient(circle, #ff85c1, #db0c8b);
+      transform: scale(1.07);
+    }
+
+    @keyframes parpadeo {
+      0%, 100% { box-shadow: 0 0 20px #ff85c1; }
+      50% { box-shadow: 0 0 35px #ff2e9e; }
+    }
+
+    .mensaje {
+      display: none;
+      text-align: center;
+      padding: 40px;
+      max-width: 700px;
+      animation: aparecer 2s ease-in-out forwards;
+      color: #c90076;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .mensaje h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #e60073;
+      text-shadow: 0 0 10px #ffc0cb;
+    }
+
+    .mensaje p {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .flor {
+      width: 120px;
+      height: 120px;
+      margin: 20px auto;
+      animation: crecer 3s ease-out forwards;
+    }
+
+    @keyframes crecer {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .corazones {
+      font-size: 2rem;
+      animation: latido 1.5s infinite;
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .tarjeta {
+      background-color: #fff0f5;
+      border: 1px solid #ffadd6;
+      border-radius: 12px;
+      padding: 15px 20px;
+      margin-top: 30px;
+      box-shadow: 0 0 10px #ffc0cb;
+      max-width: 300px;
+      font-size: 0.9rem;
+      color: #a0005e;
+      text-align: left;
+    }
+
+    .tarjeta strong {
+      display: block;
+      margin-bottom: 6px;
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #1a1a1a;
-      border-top: 2px solid #aa0000;
+      margin-top: 50px;
       font-size: 0.9rem;
-      color: #aaa;
+      color: #a0005e;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="banner">
-      <h1>⚡BerMat Bot MD🔥</h1>
-      <p class="subtitulo">Tecnología, Inteligencia y Poder en tus manos</p>
+
+  <div class="inicio">
+    <button class="boton-sorpresa" onclick="mostrarMensaje()">TE TENGO UNA SORPRESA MI AMOR</button>
+  </div>
+
+  <div class="mensaje" id="mensaje">
+    <img src="https://i.pinimg.com/originals/e9/b3/8f/e9b38f9996ffb31b8cc28ed2cb0c9ed7.png" alt="Flor Creciendo" class="flor" />
+    <h1>Para Mi Reina BriyidthCha</h1>
+    <p>Desde que llegaste a mi vida, todo tiene más color, más sentido y más amor.</p>
+    <p>Gracias por ser mi sol, mi paz, mi todo. Eres lo mejor que tengo, y te elijo una y otra vez.</p>
+    <p>¡Te amo con toda mi alma, mi reina hermosa!</p>
+    <div class="corazones">❤️‍🔥💗💫💘🌸🌷🌹✨💖💞</div>
+    <p>Tuyo por siempre: <strong>Anth'Zz Berrocal</strong></p>
+
+    <div class="tarjeta">
+      <strong>Información del creador:</strong>
+      <p><strong>Alias:</strong> BerMatModZ</p>
+      <p><strong>Nombre:</strong> Anth'Zz Berrocal</p>
+      <p><strong>Especialidad:</strong> Bots de WhatsApp, IA, ciberseguridad</p>
+      <p><strong>Ubicación:</strong> Andahuaylas, Perú</p>
     </div>
-  </header>
-
-  <main>
-    <section id="informacion">
-      <h2>¿Qué es BerMat Bot?</h2>
-      <p>Es un bot de WhatsApp modificado, hecho desde cero por <strong>Anth'Zz Berrocal</strong>, con enfoque en <span class="resaltado">automatización, juegos, inteligencia artificial</span> y diseño personalizado para Termux.</p>
-    </section>
-
-    <section id="proyectos">
-      <h2>Proyectos Destacados</h2>
-      <ul>
-        <li>⚙️ <b>BerMat-Bot MD</b> - Versión avanzada con IA y juegos personalizados.</li>
-        <li>🧠 <b>BerMat_Mods</b> - Sistema de mods con funciones premium y seguras.</li>
-      </ul>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto y Redes</h2>
-      <p>¿Quieres colaborar o probar el bot?</p>
-      <div class="redes">
-        <a href="https://github.com/Anthzberrocal" target="_blank">GitHub</a>
-        <a href="https://wa.me/937556459" target="_blank">WhatsApp</a>
-      </div>
-    </section>
-  </main>
+  </div>
 
   <footer>
-    <p>© 2025 ⚡BerMat Bot MD🔥 | Hecho por Anth'Zz Berrocal | Andahuaylas - Perú</p>
+    © 2025 Hecho con todo el amor del mundo para Briyidth Jhorgina
   </footer>
+
+  <script>
+    function mostrarMensaje() {
+      document.querySelector('.inicio').style.display = 'none';
+      document.getElementById('mensaje').style.display = 'block';
+    }
+  </script>
+
 </body>
 </html>
