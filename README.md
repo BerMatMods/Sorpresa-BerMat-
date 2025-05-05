@@ -55,7 +55,7 @@
 
     .mensaje {
       margin-top: 30px;
-      padding: 20px;
+      padding: 25px;
       background-color: #ffe6ff;
       border-radius: 15px;
       font-size: 20px;
@@ -128,22 +128,22 @@
 
     <div id="mensaje" class="mensaje">
       <div class="flor"></div>
-      <p style="font-family:'Pacifico', cursive; font-size: 24px;">
-        Mi Briyidth hermosa,<br>
-        eres la flor más bella de mi jardín, <br>
-        la razón de mis sonrisas y de mi fuerza diaria.<br>
-        ¡Te amo con todo mi corazón!<br><br>
-        Siempre tuyo,<br>
-        Anth'Zz
+      <p style="font-family:'Pacifico', cursive; font-size: 22px;">
+        Te amo mucho mi amor, mi reina hermosa.<br>
+        Te doy gracias por llegar a mi vida.<br>
+        Eres lo más valioso que tengo y tengo miedo a perderte.<br>
+        Siempre te voy a amar, en las buenas y en las malas.<br>
+        Y sé que juntos vamos a salir adelante.<br><br>
+        <strong>Te amo muchísimo, mi mami.</strong>
       </p>
       <div class="imagen-extra">
-        <img src="https://raw.githubusercontent.com/anthzberrocal/bermatmodz/main/PSX-20250501-194224.jpg" alt="Imagen dedicada a Briyidth" />
+        <img src="https://i.postimg.cc/pXWvCFsC/IMG-20240924-WA0182.jpg" alt="Foto dedicada a Briyidth" />
       </div>
     </div>
   </div>
 
   <div class="footer">
-    Creado con amor por Anth'Zz Berrocal | Proyecto: BerMatModZ
+    Creado con amor por Anth'Zz Berrocal | Proyecto BerMatModZ
   </div>
 
   <script>
