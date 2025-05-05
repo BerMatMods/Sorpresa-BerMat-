@@ -4,8 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>⚡BerMat Bot MD🔥</title>
-  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0b0b0b;
+      color: #f2f2f2;
+      font-family: 'Share Tech Mono', monospace;
+    }
+
+    header {
+      background: linear-gradient(145deg, #8b0000, #ff0000);
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 0 20px red;
+      border-bottom: 3px solid #ff5e5e;
+    }
+
+    .banner h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 0 0 10px #ff4b4b;
+    }
+
+    .subtitulo {
+      font-size: 1.2rem;
+      color: #ffd6d6;
+      margin-top: 10px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      background-color: #1a1a1a;
+      border: 2px solid #aa0000;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #aa0000;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #ff4b4b;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .resaltado {
+      color: #ff4b4b;
+      font-weight: bold;
+    }
+
+    .redes a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #ff0000;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #ff4b4b;
+      transition: 0.3s;
+    }
+
+    .redes a:hover {
+      background-color: #cc0000;
+      box-shadow: 0 0 10px #ff4b4b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-top: 2px solid #aa0000;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -44,91 +132,3 @@
   </footer>
 </body>
 </html>
-
-body {
-  margin: 0;
-  background-color: #0b0b0b;
-  color: #f2f2f2;
-  font-family: 'Share Tech Mono', monospace;
-}
-
-header {
-  background: linear-gradient(145deg, #8b0000, #ff0000);
-  padding: 40px;
-  text-align: center;
-  box-shadow: 0 0 20px red;
-  border-bottom: 3px solid #ff5e5e;
-}
-
-.banner h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 3rem;
-  color: #fff;
-  text-shadow: 0 0 10px #ff4b4b;
-}
-
-.subtitulo {
-  font-size: 1.2rem;
-  color: #ffd6d6;
-  margin-top: 10px;
-}
-
-main {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-section {
-  background-color: #1a1a1a;
-  border: 2px solid #aa0000;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #aa0000;
-}
-
-h2 {
-  font-family: 'Orbitron', sans-serif;
-  color: #ff4b4b;
-  margin-bottom: 20px;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
-ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-
-.resaltado {
-  color: #ff4b4b;
-  font-weight: bold;
-}
-
-.redes a {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #ff0000;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #ff4b4b;
-  transition: 0.3s;
-}
-
-.redes a:hover {
-  background-color: #cc0000;
-  box-shadow: 0 0 10px #ff4b4b;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1a1a1a;
-  border-top: 2px solid #aa0000;
-  font-size: 0.9rem;
-  color: #aaa;
-}
