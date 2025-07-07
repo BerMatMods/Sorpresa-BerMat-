@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sorpresa para Briyidth</title>
+  <title>💍 Aniversario con Briyidth 💖</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -18,13 +18,13 @@
 
     .container {
       text-align: center;
-      margin-top: 80px;
+      margin-top: 60px;
       padding: 30px;
       border-radius: 20px;
       background: rgba(255, 255, 255, 0.85);
       box-shadow: 0 0 30px rgba(192, 112, 255, 0.6);
       width: 90%;
-      max-width: 600px;
+      max-width: 650px;
     }
 
     .titulo {
@@ -119,37 +119,81 @@
       width: 90%;
       max-width: 300px;
     }
+
+    .destacado {
+      font-family: 'Pacifico', cursive;
+      font-size: 22px;
+      color: #d100d1;
+      text-shadow: 0 0 5px #ff99ff;
+    }
+
+    .contador {
+      font-size: 18px;
+      color: #9900cc;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="titulo">TE TENGO UNA SORPRESA MI AMOR</div>
-    <button class="btn" onclick="mostrarMensaje()">Haz clic aquí</button>
+    <div class="titulo">💖 FELIZ ANIVERSARIO MI AMOR 💖</div>
+    <div class="contador" id="contador">Calculando el tiempo... ⏳</div>
+    <button class="btn" onclick="mostrarMensaje()">Haz clic aquí, mi reina 👑</button>
 
     <div id="mensaje" class="mensaje">
       <div class="flor"></div>
-      <p style="font-family:'Pacifico', cursive; font-size: 22px;">
-        Te amo mucho mi amor, mi reina hermosa.<br>
-        Te doy gracias por llegar a mi vida.<br>
-        Eres lo más valioso que tengo y tengo miedo a perderte.<br>
-        Siempre te voy a amar, en las buenas y en las malas.<br>
-        Y sé que juntos vamos a salir adelante.<br><br>
-        <strong>Te amo muchísimo, mi mami.</strong>
+      <p class="destacado">
+        Te amo mucho mi amor, mi reina hermosa Briyidth Jhorgina. 💗<br><br>
+        Hoy celebramos 1 año y 8 meses de amor verdadero, de historias únicas, sonrisas, lágrimas y sueños juntos.<br>
+        Gracias por existir en mi vida. Eres mi bendición. 💫<br>
+        Siempre te voy a amar, en las buenas y en las malas. 💍<br><br>
+        <strong>Te amo muchísimo, mi mami, mi reina, mi todo. 💘</strong>
       </p>
       <div class="imagen-extra">
         <img src="https://i.postimg.cc/pXWvCFsC/IMG-20240924-WA0182.jpg" alt="Foto dedicada a Briyidth" />
       </div>
+      <audio controls autoplay loop>
+        <!-- 🎵 Reemplaza este enlace con el audio real de Cosculluela si lo tienes -->
+        <source src="TU_LINK_DE_AUDIO_AQUI.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
     </div>
   </div>
 
   <div class="footer">
-    Creado con amor por Anth'Zz Berrocal | Proyecto BerMatModZ
+    Creado con amor por Anth'Zz Berrocal 💻 | Proyecto BerMatModZ ❤️
   </div>
 
   <script>
     function mostrarMensaje() {
       document.getElementById("mensaje").style.display = "block";
     }
+
+    // 🕓 Contador desde el 10 noviembre 2023
+    const inicio = new Date("2023-11-10T00:00:00");
+    const contador = document.getElementById("contador");
+
+    function actualizarContador() {
+      const ahora = new Date();
+      let diferencia = ahora - inicio;
+
+      const segundos = Math.floor(diferencia / 1000) % 60;
+      const minutos = Math.floor(diferencia / 1000 / 60) % 60;
+      const horas = Math.floor(diferencia / (1000 * 60 * 60)) % 24;
+      const diasTotales = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+      const meses = Math.floor(diasTotales / 30);
+      const dias = diasTotales % 30;
+
+      contador.innerHTML = `💞 Llevamos juntos: ${meses} meses, ${dias} días, ${horas}h ${minutos}m ${segundos}s 💞`;
+    }
+
+    setInterval(actualizarContador, 1000);
   </script>
 </body>
+</html></body>
 </html>
