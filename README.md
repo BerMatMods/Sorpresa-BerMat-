@@ -4,16 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>💍 Aniversario con Briyidth 💖</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Great+Vibes&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #f8e4ff, #f3c1f7);
+      background: linear-gradient(135deg, #e8c1ff, #c27eff);
       font-family: 'Raleway', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
     }
 
     .container {
@@ -21,17 +22,18 @@
       margin-top: 60px;
       padding: 30px;
       border-radius: 20px;
-      background: rgba(255, 255, 255, 0.85);
-      box-shadow: 0 0 30px rgba(192, 112, 255, 0.6);
+      background: rgba(255, 255, 255, 0.90);
+      box-shadow: 0 0 35px rgba(136, 0, 204, 0.6);
       width: 90%;
       max-width: 650px;
+      z-index: 2;
     }
 
     .titulo {
-      font-family: 'Great Vibes', cursive;
-      font-size: 40px;
-      color: #ba00ff;
-      text-shadow: 0 0 10px #ff00f2;
+      font-family: 'Dancing Script', cursive;
+      font-size: 45px;
+      color: #9100c4;
+      text-shadow: 0 0 10px #ff00f7, 0 0 5px #ff66f6;
       animation: parpadeo 2s infinite;
     }
 
@@ -118,6 +120,7 @@
       text-align: center;
       width: 90%;
       max-width: 300px;
+      z-index: 2;
     }
 
     .destacado {
@@ -136,12 +139,47 @@
 
     audio {
       margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #cc66ff;
+    }
+
+    /* Muñequitos animados */
+    .muñequitos {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      background: rgba(255, 255, 255, 0.3);
+      font-size: 30px;
+      animation: rebote 2s infinite ease-in-out;
+      z-index: 1;
+    }
+
+    @keyframes rebote {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Muñequitos de imagen (ya diseñados) */
+    .muñequitos img {
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+      animation: muñequito-bailando 2s infinite;
+    }
+
+    @keyframes muñequito-bailando {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="titulo">💖 FELIZ ANIVERSARIO MI AMOR 💖</div>
+    <div class="titulo">💖 Feliz Aniversario Mi Amor 💖</div>
     <div class="contador" id="contador">Calculando el tiempo... ⏳</div>
     <button class="btn" onclick="mostrarMensaje()">Haz clic aquí, mi reina 👑</button>
 
@@ -158,8 +196,7 @@
         <img src="https://i.postimg.cc/pXWvCFsC/IMG-20240924-WA0182.jpg" alt="Foto dedicada a Briyidth" />
       </div>
       <audio controls autoplay loop>
-        <!-- 🎵 Reemplaza este enlace con el audio real de Cosculluela si lo tienes -->
-        <source src="TU_LINK_DE_AUDIO_AQUI.mp3" type="audio/mpeg">
+        <source src="https://files.catbox.moe/27v6co.mp3" type="audio/mpeg">
         Tu navegador no soporta audio.
       </audio>
     </div>
@@ -169,12 +206,18 @@
     Creado con amor por Anth'Zz Berrocal 💻 | Proyecto BerMatModZ ❤️
   </div>
 
+  <!-- Muñequitos animados -->
+  <div class="muñequitos">
+    <img src="https://i.imgur.com/someimage1.png" alt="Muñeco 1" />
+    <img src="https://i.imgur.com/someimage2.png" alt="Muñeco 2" />
+    <img src="https://i.imgur.com/someimage3.png" alt="Muñeco 3" />
+  </div>
+
   <script>
     function mostrarMensaje() {
       document.getElementById("mensaje").style.display = "block";
     }
 
-    // 🕓 Contador desde el 10 noviembre 2023
     const inicio = new Date("2023-11-10T00:00:00");
     const contador = document.getElementById("contador");
 
@@ -195,5 +238,4 @@
     setInterval(actualizarContador, 1000);
   </script>
 </body>
-</html></body>
 </html>
