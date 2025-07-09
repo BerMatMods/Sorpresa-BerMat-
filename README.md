@@ -272,13 +272,13 @@
 
   <div class="muñequitos">
     <div class="cuadro">
-      <img src="https://i.postimg.cc/6qf6xLNc/pngtree-rose-red-roses-flower-png-image-15133984.png" alt="Flor 1" />
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydGNkNnY0dGFoZzNrYjRubmp0cGM0ajAyNTNmczE2bWpkaGl1OG14aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yN5xPFm8klwMddZVKi/giphy.gif" alt="Decoración GIF 1" />
     </div>
     <div class="cuadro">
-      <img src="https://i.postimg.cc/nL9HhtJC/40a978855678347ec791ff76c9cad6e0.jpg" alt="Flor 2" />
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUydTBxMDB2eDB0ZXh2MjF1dm90N242djlpcWJoaG1qc2xxcXVyODM5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/5dkb3UXNiRU5qwNrzL/giphy.gif" alt="Decoración GIF 2" />
     </div>
     <div class="cuadro">
-      <img src="https://i.postimg.cc/6qf6xLNc/pngtree-rose-red-roses-flower-png-image-15133984.png" alt="Flor 3" />
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydGNkNnY0dGFoZzNrYjRubmp0cGM0ajAyNTNmczE2bWpkaGl1OG14aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yN5xPFm8klwMddZVKi/giphy.gif" alt="Decoración GIF 3" />
     </div>
   </div>
 
