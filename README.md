@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -270,7 +270,7 @@
   </div>
 
   <div class="footer">
-    By: Anth'Zz Berrocal 💻 | Lider_BerMatModZ ❤️
+    𝐁𝐲: 𝐀𝐧𝐭𝐡𝐙𝐳 𝐁𝐞𝐫𝐫𝐨𝐜𝐚𝐥 | 𝑳𝒊𝒅𝒆𝒓 👽BERMATMODS👽 
   </div>
 
   <div class="muñequitos">
@@ -326,7 +326,7 @@
         años--;
       }
 
-      contador.innerHTML = `💞 Llevamos juntos: ${años} años, ${meses} meses, ${dias} días, ${horas}h ${minutos}m ${segundos}s 💞`;
+      contador.innerHTML = `💞 𝐘𝐀 𝐕𝐀𝐌𝐎𝐒: ${𝐚𝐧̃𝐨𝐬} 𝐀𝐍̃𝐎𝐒, ${𝐦𝐞𝐬𝐞𝐬} 𝐌𝐄𝐒𝐄𝐒, ${𝐝𝐢𝐚𝐬} 𝐃𝐈𝐀𝐒, ${𝐡𝐨𝐫𝐚𝐬}h ${𝐦𝐢𝐧𝐮𝐭𝐨𝐬}m ${𝐬𝐞𝐠𝐮𝐧𝐝𝐨𝐬}s 💞`;
     }
 
     setInterval(actualizarContador, 1000);
