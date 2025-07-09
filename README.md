@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -65,10 +65,12 @@
       user-select: none;
       display: inline-block;
     }
+
     .btn:hover {
       transform: scale(1.05);
       box-shadow: 0 0 40px #f50057;
     }
+
     .btn:disabled {
       background: #f8bbd0;
       border-color: #f48fb1;
@@ -124,7 +126,6 @@
       user-select: none;
     }
 
-    /* Flores grandes en cuadritos decorativos */
     .muñequitos {
       position: fixed;
       bottom: 0;
@@ -166,7 +167,6 @@
       100% { transform: translateY(0); }
     }
 
-    /* Botón para galería */
     #btnGaleria {
       margin-top: 20px;
       background: linear-gradient(45deg, #ba68c8, #ab47bc);
@@ -180,12 +180,12 @@
       box-shadow: 0 0 20px #ce93d8;
       transition: transform 0.3s ease;
     }
+
     #btnGaleria:hover {
       transform: scale(1.05);
       box-shadow: 0 0 30px #9c27b0;
     }
 
-    /* Galería fotos */
     #galeria {
       display: none;
       margin-top: 25px;
@@ -219,7 +219,6 @@
       user-select: none;
     }
 
-    /* Video */
     #galeria video {
       width: 100%;
       border-radius: 15px;
@@ -237,7 +236,7 @@
 
     <div id="mensaje" class="mensaje">
       <p>🎉 ¡Feliz 1 año y 8 meses, mi reina Briyidth! 🎉</p>
-      <p>Hoy Cumplimos un mes mi amor , y vamos por mas .</p>
+      <p>Hoy Cumplimos un mes mi amor, y vamos por más.</p>
       <p>Gracias por regalarme tu vida, tu risa y tu ternura.</p>
       <p>Siempre contigo, hasta el fin del mundo. 💘</p>
     </div>
@@ -264,8 +263,6 @@
       <div class="cuadro-foto">
         <img src="https://i.postimg.cc/59KpJcnh/IMG-20241228-231305-817-3.jpg" alt="Foto 5" />
       </div>
-
-    
     </div>
   </div>
 
@@ -297,7 +294,7 @@
     function actualizarContador() {
       const ahora = new Date();
 
-      let años = ahora.getFullYear() - inicio.getFullYear();
+      let anos = ahora.getFullYear() - inicio.getFullYear();
       let meses = ahora.getMonth() - inicio.getMonth();
       let dias = ahora.getDate() - inicio.getDate();
       let horas = ahora.getHours() - inicio.getHours();
@@ -323,11 +320,10 @@
       }
       if (meses < 0) {
         meses += 12;
-        años--;
+        anos--;
       }
 
       contador.innerHTML = `💞 𝐘𝐀 𝐕𝐀𝐌𝐎𝐒: ${anos} AÑOS, ${meses} MESES, ${dias} DÍAS, ${horas}h ${minutos}m ${segundos}s 💞`;
-      
     }
 
     setInterval(actualizarContador, 1000);
