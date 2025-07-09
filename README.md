@@ -208,9 +208,9 @@
 
   <!-- Muñequitos animados -->
   <div class="muñequitos">
-    <img src="https://i.imgur.com/someimage1.png" alt="Muñeco 1" />
-    <img src="https://i.imgur.com/someimage2.png" alt="Muñeco 2" />
-    <img src="https://i.imgur.com/someimage3.png" alt="Muñeco 3" />
+    <img src="https://i.postimg.cc/6qf6xLNc/pngtree-rose-red-roses-flower-png-image-15133984.png" alt="Muñeco 1" />
+    <img src="https://i.postimg.cc/nL9HhtJC/40a978855678347ec791ff76c9cad6e0.jpg" alt="Muñeco 2" />
+    <img src="https://i.postimg.cc/6qf6xLNc/pngtree-rose-red-roses-flower-png-image-15133984.png" alt="Muñeco 3" />
   </div>
 
   <script>
