@@ -1,4 +1,152 @@
-<!DOCTYPE html>
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💍 Aniversario con Briyidth 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Great+Vibes&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+      font-family: 'Raleway', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      min-height: 100vh;
+    }#pantallaClave {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+#pantallaClave h2 {
+  font-size: 30px;
+  color: #ad1457;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px #ec407a;
+}
+
+#claveInput {
+  font-size: 24px;
+  padding: 15px;
+  border: 3px solid #ec407a;
+  border-radius: 15px;
+  text-align: center;
+  width: 220px;
+  margin-bottom: 15px;
+  letter-spacing: 4px;
+  color: #880e4f;
+}
+
+#claveInput::placeholder {
+  color: #d81b60;
+  opacity: 0.5;
+}
+
+#teclado {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tecla {
+  font-size: 24px;
+  padding: 15px;
+  background: #f8bbd0;
+  border: 2px solid #ec407a;
+  border-radius: 15px;
+  color: #880e4f;
+  cursor: pointer;
+  box-shadow: 0 0 10px #f48fb1;
+  user-select: none;
+}
+
+.tecla:active {
+  transform: scale(0.95);
+  background: #f48fb1;
+}
+
+#accederBtn {
+  padding: 10px 25px;
+  font-size: 22px;
+  background: linear-gradient(45deg, #f06292, #ec407a);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Pacifico', cursive;
+  box-shadow: 0 0 20px #ec407a;
+  cursor: pointer;
+}
+
+#gifAcceso {
+  margin-top: 25px;
+}
+
+#contenidoPrincipal {
+  display: none;
+}
+
+  </style>
+</head>
+<body>
+  <div id="pantallaClave">
+    <h2>🔒 Código para acceder</h2>
+    <input type="text" id="claveInput" placeholder="10/11/23" maxlength="8" readonly>
+    <div id="teclado"></div>
+    <button id="accederBtn">Acceder</button>
+    <div id="gifAcceso">
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydXRucTZibGt3cDRhdTA1NXQzOG04ejZ6NGVtbXNzMjAxemp3ZnZjOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/huXuyCODzzCQLy3T05/giphy.gif" width="220">
+    </div>
+  </div>  <div id="contenidoPrincipal">
+    <!-- Aquí se inyectará automáticamente todo tu código anterior -->
+    <script>
+      document.body.insertAdjacentHTML('beforeend', `REEMPLAZAR_CONTENIDO_AQUÍ`);
+    </script>
+  </div>  <script>
+    const input = document.getElementById('claveInput');
+    const teclado = document.getElementById('teclado');
+    const accederBtn = document.getElementById('accederBtn');
+    const claveCorrecta = '10/11/23';
+
+    const numeros = ['1','2','3','4','5','6','7','8','9','0','B','/'];
+    numeros.forEach(n => {
+      const tecla = document.createElement('div');
+      tecla.className = 'tecla';
+      tecla.textContent = n;
+      tecla.onclick = () => {
+        if(n === 'B') {
+          input.value = input.value.slice(0, -1);
+        } else {
+          if(input.value.length < 8) {
+            input.value += n;
+          }
+        }
+      }
+      teclado.appendChild(tecla);
+    });
+
+    accederBtn.addEventListener('click', () => {
+      if(input.value === claveCorrecta) {
+        document.getElementById('pantallaClave').style.display = 'none';
+        document.getElementById('contenidoPrincipal').style.display = 'block';
+      } else {
+        alert('Código incorrecto ❌');
+      }
+    });
+  </script></body>
+</html>
+
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
