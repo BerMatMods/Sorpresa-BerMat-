@@ -63,7 +63,6 @@
       font-size: 20px;
       color: #aa00aa;
       box-shadow: 0 0 15px #f0b3ff;
-      display: none;
       animation: aparecer 1.5s ease-out forwards;
     }
 
@@ -143,7 +142,6 @@
       box-shadow: 0 0 10px #cc66ff;
     }
 
-    /* Muñequitos animados */
     .muñequitos {
       position: fixed;
       bottom: 0;
@@ -162,11 +160,19 @@
       50% { transform: translateY(-10px); }
     }
 
-    /* Muñequitos de imagen (ya diseñados) */
-    .muñequitos img {
-      width: 50px;
-      height: 50px;
+    .muñequitos .cuadro {
+      display: inline-block;
+      background: #fff;
+      border: 2px solid #cc66ff;
+      border-radius: 15px;
+      padding: 10px;
       margin: 0 10px;
+      box-shadow: 0 0 10px #f0caff;
+    }
+
+    .muñequitos img {
+      width: 70px;
+      height: 70px;
       animation: muñequito-bailando 2s infinite;
     }
 
@@ -181,13 +187,12 @@
   <div class="container">
     <div class="titulo">💖 Feliz Aniversario Mi Amor 💖</div>
     <div class="contador" id="contador">Calculando el tiempo... ⏳</div>
-    <button class="btn" onclick="mostrarMensaje()">Haz clic aquí, mi reina 👑</button>
 
     <div id="mensaje" class="mensaje">
       <div class="flor"></div>
       <p class="destacado">
         Te amo mucho mi amor, mi reina hermosa Briyidth Jhorgina. 💗<br><br>
-        Hoy celebramos 1 año y 8 meses de amor verdadero, de historias únicas, sonrisas, lágrimas y sueños juntos.<br>
+        Hoy celebramos nuestro amor verdadero, con historias únicas, sonrisas, lágrimas y sueños juntos.<br>
         Gracias por existir en mi vida. Eres mi bendición. 💫<br>
         Siempre te voy a amar, en las buenas y en las malas. 💍<br><br>
         <strong>Te amo muchísimo, mi mami, mi reina, mi todo. 💘</strong>
@@ -206,33 +211,60 @@
     Creado con amor por Anth'Zz Berrocal 💻 | Proyecto BerMatModZ ❤️
   </div>
 
-  <!-- Muñequitos animados -->
+  <!-- Flores (muñequitos) grandes en cuadros -->
   <div class="muñequitos">
-    <img src="https://i.postimg.cc/6qf6xLNc/pngtree-rose-red-roses-flower-png-image-15133984.png" alt="Muñeco 1" />
-    <img src="https://i.postimg.cc/nL9HhtJC/40a978855678347ec791ff76c9cad6e0.jpg" alt="Muñeco 2" />
-    <img src="https://i.postimg.cc/6qf6xLNc/pngtree-rose-red-roses-flower-png-image-15133984.png" alt="Muñeco 3" />
+    <div class="cuadro">
+      <img src="https://i.postimg.cc/6qf6xLNc/pngtree-rose-red-roses-flower-png-image-15133984.png" alt="Flor 1" />
+    </div>
+    <div class="cuadro">
+      <img src="https://i.postimg.cc/nL9HhtJC/40a978855678347ec791ff76c9cad6e0.jpg" alt="Flor 2" />
+    </div>
+    <div class="cuadro">
+      <img src="https://i.postimg.cc/6qf6xLNc/pngtree-rose-red-roses-flower-png-image-15133984.png" alt="Flor 3" />
+    </div>
   </div>
 
   <script>
-    function mostrarMensaje() {
-      document.getElementById("mensaje").style.display = "block";
-    }
-
     const inicio = new Date("2023-11-10T00:00:00");
     const contador = document.getElementById("contador");
 
     function actualizarContador() {
       const ahora = new Date();
-      let diferencia = ahora - inicio;
 
-      const segundos = Math.floor(diferencia / 1000) % 60;
-      const minutos = Math.floor(diferencia / 1000 / 60) % 60;
-      const horas = Math.floor(diferencia / (1000 * 60 * 60)) % 24;
-      const diasTotales = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-      const meses = Math.floor(diasTotales / 30);
-      const dias = diasTotales % 30;
+      let años = ahora.getFullYear() - inicio.getFullYear();
+      let meses = ahora.getMonth() - inicio.getMonth();
+      let dias = ahora.getDate() - inicio.getDate();
+      let horas = ahora.getHours() - inicio.getHours();
+      let minutos = ahora.getMinutes() - inicio.getMinutes();
+      let segundos = ahora.getSeconds() - inicio.getSeconds();
 
-      contador.innerHTML = `💞 Llevamos juntos: ${meses} meses, ${dias} días, ${horas}h ${minutos}m ${segundos}s 💞`;
+      if (segundos < 0) {
+        segundos += 60;
+        minutos--;
+      }
+
+      if (minutos < 0) {
+        minutos += 60;
+        horas--;
+      }
+
+      if (horas < 0) {
+        horas += 24;
+        dias--;
+      }
+
+      if (dias < 0) {
+        meses--;
+        const mesAnterior = new Date(ahora.getFullYear(), ahora.getMonth(), 0);
+        dias += mesAnterior.getDate();
+      }
+
+      if (meses < 0) {
+        meses += 12;
+        años--;
+      }
+
+      contador.innerHTML = `💞 Llevamos juntos: ${años} años, ${meses} meses, ${dias} días, ${horas}h ${minutos}m ${segundos}s 💞`;
     }
 
     setInterval(actualizarContador, 1000);
