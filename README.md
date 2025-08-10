@@ -345,6 +345,44 @@
     0%, 50% { opacity: 1; }
     51%, 100% { opacity: 0; }
   }
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap');
+
+  body {
+    background: radial-gradient(circle, #000000, #1a1a1a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ff69b4;
+    padding: 20px;
+  }
+
+  #mensaje {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.8;
+    white-space: pre-line;
+    max-width: 800px;
+    border-left: 5px solid #ff69b4;
+    padding-left: 20px;
+    text-shadow: 0 0 5px #ff69b4, 0 0 15px #ff1493;
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 8px;
+    background-color: #ff69b4;
+    margin-left: 3px;
+    animation: blink 0.8s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
 </style>
 
 <div id="mensaje"></div>
@@ -352,22 +390,24 @@
 
 <script>
   const texto = `🎉💖 ¡Feliz 1 año y 9 meses, mi reina Briyidth! 💖🎉
-Hoy celebramos otro mes más juntos, mi amor, y cada día a tu lado es un regalo que la vida me dio. 💕
-Gracias por regalarme tu tiempo, tu cariño, tu risa y tu ternura, por escucharme y apoyarme siempre. 🌹
-Te amo muchísimo más allá de las palabras, más de lo que el corazón puede expresar. 💌
-Contigo aprendí que el verdadero amor no es perfecto, pero es real, sincero y eterno. 💍
-Me haces sentir el hombre más afortunado del mundo, y quiero estar a tu lado en cada meta, en cada sueño y en cada caída. ✨
-Gracias por ser mi refugio, mi fuerza, mi alegría y mi paz. 🌈
-No importa lo que pase, mi amor por ti seguirá creciendo con cada amanecer. 🌅
-Siempre contigo, hasta el fin del mundo y más allá, porque tú eres mi reina y mi destino. 💘
-💞 Te amo con todo lo que soy, mi reina hermosa. 💞`;
+Hoy celebramos otro mes más juntos, y mi corazón late más fuerte por ti cada día. 💕
+Gracias por llegar a mi vida, por llenar mis días de risas, abrazos y momentos que nunca olvidaré. 🌹
+Eres mi razón de sonreír, mi inspiración, mi fuerza y mi paz. 💌
+Quiero que sepas que no importa lo que pase, siempre estaré a tu lado para cuidarte, apoyarte y amarte. 💍
+Tu amor me ha hecho mejor persona, y no hay un solo segundo en el que no agradezca tenerte. ✨
+Te prometo seguir luchando por nosotros, cumplir nuestros sueños y escribir juntos una historia que dure para siempre. 🌈
+Cada beso tuyo me recuerda que el verdadero paraíso es tenerte cerca. 🌅
+Eres mi todo, mi hogar, mi destino y mi vida entera. 💘
+No hay distancia, tiempo o dificultad que pueda separarnos, porque nuestro amor es más fuerte que todo. 💞
+Te amo con la intensidad de mil soles, con la ternura de mil lunas y con la eternidad de mil vidas. 🌠
+💞 Mi reina hermosa, eres lo más valioso que tengo y siempre lo serás. 💞`;
 
   let i = 0;
   function escribir() {
     if (i < texto.length) {
       document.getElementById("mensaje").textContent += texto.charAt(i);
       i++;
-      setTimeout(escribir, 50); // Velocidad de escritura
+      setTimeout(escribir, 50);
     }
   }
   escribir();
