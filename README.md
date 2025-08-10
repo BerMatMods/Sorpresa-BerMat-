@@ -322,12 +322,56 @@
 
       <button class="btn" id="btnSorpresa">TOCA AQUÍ MI REINA</button>
 
-      <div id="mensaje" class="mensaje">
-        <p>🎉 ¡Feliz 1 año y 8 meses, mi reina Briyidth! 🎉</p>
-        <p>Hoy Cumplimos un mes mi amor, y vamos por más.</p>
-        <p>Gracias por regalarme tu vida, tu risa y tu ternura.</p>
-        <p>Siempre contigo, hasta el fin del mundo. 💘</p>
-      </div>
+      <style>
+  #mensaje {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    color: #ff69b4;
+    line-height: 1.6;
+    white-space: pre-line; /* Mantiene los saltos de línea */
+    border-left: 3px solid #ff69b4;
+    padding-left: 15px;
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 8px;
+    background-color: #ff69b4;
+    margin-left: 3px;
+    animation: blink 0.8s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+</style>
+
+<div id="mensaje"></div>
+<span class="cursor"></span>
+
+<script>
+  const texto = `🎉💖 ¡Feliz 1 año y 9 meses, mi reina Briyidth! 💖🎉
+Hoy celebramos otro mes más juntos, mi amor, y cada día a tu lado es un regalo que la vida me dio. 💕
+Gracias por regalarme tu tiempo, tu cariño, tu risa y tu ternura, por escucharme y apoyarme siempre. 🌹
+Te amo muchísimo más allá de las palabras, más de lo que el corazón puede expresar. 💌
+Contigo aprendí que el verdadero amor no es perfecto, pero es real, sincero y eterno. 💍
+Me haces sentir el hombre más afortunado del mundo, y quiero estar a tu lado en cada meta, en cada sueño y en cada caída. ✨
+Gracias por ser mi refugio, mi fuerza, mi alegría y mi paz. 🌈
+No importa lo que pase, mi amor por ti seguirá creciendo con cada amanecer. 🌅
+Siempre contigo, hasta el fin del mundo y más allá, porque tú eres mi reina y mi destino. 💘
+💞 Te amo con todo lo que soy, mi reina hermosa. 💞`;
+
+  let i = 0;
+  function escribir() {
+    if (i < texto.length) {
+      document.getElementById("mensaje").textContent += texto.charAt(i);
+      i++;
+      setTimeout(escribir, 50); // Velocidad de escritura
+    }
+  }
+  escribir();
+</script>
 
       <div class="imagen-extra" id="imagenExtra">
         <img src="https://i.postimg.cc/pXWvCFsC/IMG-20240924-WA0182.jpg" alt="Foto de nosotros" />
