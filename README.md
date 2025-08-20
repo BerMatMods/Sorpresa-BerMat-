@@ -1846,7 +1846,7 @@
                 
                 <div class="form-group">
                     <label class="form-label">Teléfono</label>
-                    <input type="tel" class="form-input" placeholder="937 55 64 59">
+                    <input type="tel" class="form-input" placeholder="937 556 459">
                 </div>
                 
                 <div class="form-group">
@@ -1858,11 +1858,11 @@
             </form>
             
             <div class="vip-options">
-                <h3>Planes VIP Disponibles</h3>
+                <h3>Acciones VIP Disponibles</h3>
                 <div class="vip-plans">
                     <div class="vip-plan">
                         <h4 class="vip-name">Básico</h4>
-                        <div class="vip-price">Gratis</div>
+                        <div class="vip-price">Gratis con registro</div>
                         <ul class="vip-features">
                             <li>Acceso básico</li>
                             <li>Soporte estándar</li>
@@ -1873,7 +1873,7 @@
                     
                     <div class="vip-plan popular">
                         <h4 class="vip-name">Profesional</h4>
-                        <div class="vip-price">S/ 299/mes</div>
+                        <div class="vip-price">S/ Oferta/mes</div>
                         <ul class="vip-features">
                             <li>Acceso completo</li>
                             <li>Soporte prioritario</li>
@@ -1886,7 +1886,7 @@
                     
                     <div class="vip-plan">
                         <h4 class="vip-name">Empresarial</h4>
-                        <div class="vip-price">S/ 899/mes</div>
+                        <div class="vip-price">S/ Oferta/mes</div>
                         <ul class="vip-features">
                             <li>Acceso total</li>
                             <li>Soporte 24/7</li>
@@ -2021,7 +2021,7 @@
         
         // Google sign-in simulation
         document.querySelector('.google-signin').addEventListener('click', function() {
-            alert('Simulación de inicio de sesión con Google. En una implementación real, redirigiría a la autenticación de Google.');
+            alert('El inició de seción con Google a fallado comomunicate con mi creador 👽AnthZz Berrocal👽 o vuelve a intentar en unis segundos se ke agradece su paciencia ❤️.');
         });
         
         // Product and course card interactions
