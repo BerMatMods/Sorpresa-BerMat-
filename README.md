@@ -1333,7 +1333,11 @@
     <section class="hero">
         <div class="hero-content">
             <h1 class="hero-title">TECH STORE</h1>
-            <p class="hero-subtitle">Domina el mundo del hacking ético, recuperación de cuentas, servidores HTTP Injector y seguridad digital con los cursos y productos más avanzados del mercado.</p>
+            <p class="hero-subtitle">⚡ 𝗗𝗼𝗺𝗶𝗻𝗮 𝗵𝗮𝗰𝗸𝗶𝗻𝗴 é𝘁𝗶𝗰𝗼, 𝗿𝗲𝗰𝘂𝗽𝗲𝗿𝗮𝗰𝗶𝗼́𝗻 𝗱𝗲 𝗰𝘂𝗲𝗻𝘁𝗮𝘀, 𝘀𝗲𝗿𝘃𝗶𝗱𝗼𝗿𝗲𝘀 𝗛𝗧𝗧𝗣 𝗜𝗻𝗷𝗲𝗰𝘁𝗼𝗿, 𝗯𝗼𝘁𝘀 𝗱𝗲 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝗰𝗼𝗻 𝗜𝗔, 𝗽𝗿𝗼𝗴𝗿𝗮𝗺𝗮𝗰𝗶ó𝗻, 𝗰𝗶𝗯𝗲𝗿𝘀𝗲𝗴𝘂𝗿𝗶𝗱𝗮𝗱 𝗱𝗶𝗴𝗶𝘁𝗮𝗹, 𝗼𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝗰𝗶ó𝗻 𝗱𝗲 𝗿𝗲𝗱𝗲𝘀 𝘆 𝗺𝘂𝗰𝗵𝗼𝘀 𝗺á𝘀. ⚡
+
+👑 𝗔𝗻𝘁𝗵’𝗭𝘇 𝗕𝗲𝗿𝗿𝗼𝗰𝗮𝗹 (𝗕𝗲𝗿𝗠𝗮𝘁𝗠𝗼𝗱𝗭) — H𝗲𝗿𝗿𝗮𝗺𝗶𝗲𝗻𝘁𝗮𝘀 𝗱𝗶𝗴𝗶𝘁𝗮𝗹𝗲𝘀, 𝗯𝗼𝘁𝘀 𝗶𝗻𝘁𝗲𝗹𝗶𝗴𝗲𝗻𝘁𝗲𝘀, 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝘇𝗮𝗰𝗶ó𝗻, 𝗵𝗮𝗰𝗸𝗶𝗻𝗴 é𝘁𝗶𝗰𝗼 𝘆 𝗱𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗼 𝗱𝗲 𝗽𝗿𝗼𝘆𝗲𝗰𝘁𝗼𝘀 𝗶𝗻𝗻𝗼𝘃𝗮𝗱𝗼𝗿𝗲𝘀.
+𝗣𝗿𝗼𝘆𝗲𝗰𝘁𝗼𝘀: ⚡BerMat-Bot MD🔥 · BerMat_Mods · FAMA (Fuerza Anónima de Mentes Avanzadas) · Y más…
+📍 𝗔𝗻𝗱𝗮𝗵𝘂𝗮𝘆𝗹𝗮𝘀, 𝗣𝗲𝗿ú</p>
             
             <div class="hero-info">
                 <div class="info-item">
@@ -1907,7 +1911,7 @@
         <div class="footer-content">
             <div class="footer-column">
                 <h3>Tech Store</h3>
-                <p>BerMatMods íder en ciberseguridad y hacking ético en Perú. Fundada por AnthZz Berrocal, experto con  bots en seguridad informática.</p>
+                <p>BerMatMods lider en ciberseguridad y hacking ético en Perú. Fundada por AnthZz Berrocal, experto en seguridad informática.</p>
                 <div class="social-links">
                     <a href="#" class="social-link">f</a>
                     <a href="#" class="social-link">t</a>
