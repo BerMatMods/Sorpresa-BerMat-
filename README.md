@@ -1335,7 +1335,7 @@
             <h1 class="hero-title">TECH STORE</h1>
             <p class="hero-subtitle">⚡ 𝗗𝗼𝗺𝗶𝗻𝗮 𝗵𝗮𝗰𝗸𝗶𝗻𝗴 é𝘁𝗶𝗰𝗼, 𝘀𝗲𝗿𝘃𝗶𝗱𝗼𝗿𝗲𝘀 𝗛𝗧𝗧𝗣 𝗜𝗻𝗷𝗲𝗰𝘁𝗼𝗿, 𝗯𝗼𝘁𝘀 𝗱𝗲 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝗰𝗼𝗻 𝗜𝗔, 𝗽𝗿𝗼𝗴𝗿𝗮𝗺𝗮𝗰𝗶ó𝗻, 𝗰𝗶𝗯𝗲𝗿𝘀𝗲𝗴𝘂𝗿𝗶𝗱𝗮𝗱 𝗱𝗶𝗴𝗶𝘁𝗮𝗹, 𝗼𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝗰𝗶ó𝗻 𝗱𝗲 𝗿𝗲𝗱𝗲𝘀 𝘆 𝗺𝘂𝗰𝗵𝗼𝘀 𝗺á𝘀. ⚡
 
-👑 𝗔𝗻𝘁𝗵’𝗭𝘇 𝗕𝗲𝗿𝗿𝗼𝗰𝗮𝗹 (𝗕𝗲𝗿𝗠𝗮𝘁𝗠𝗼𝗱𝗭) — H𝗲𝗿𝗿𝗮𝗺𝗶𝗲𝗻𝘁𝗮𝘀 𝗱𝗶𝗴𝗶𝘁𝗮𝗹𝗲𝘀, 𝗯𝗼𝘁𝘀 𝗶𝗻𝘁𝗲𝗹𝗶𝗴𝗲𝗻𝘁𝗲𝘀, 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝘇𝗮𝗰𝗶ó𝗻, 𝗵𝗮𝗰𝗸𝗶𝗻𝗴 é𝘁𝗶𝗰𝗼 𝘆 𝗱𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗼 𝗱𝗲 𝗽𝗿𝗼𝘆𝗲𝗰𝘁𝗼𝘀 𝗶𝗻𝗻𝗼𝘃𝗮𝗱𝗼𝗿𝗲𝘀.
+👑 𝗔𝗻𝘁𝗵𝗭𝘇 𝗕𝗲𝗿𝗿𝗼𝗰𝗮𝗹 (𝗕𝗲𝗿𝗠𝗮𝘁𝗠𝗼𝗱s) — H𝗲𝗿𝗿𝗮𝗺𝗶𝗲𝗻𝘁𝗮𝘀 𝗱𝗶𝗴𝗶𝘁𝗮𝗹𝗲𝘀, 𝗯𝗼𝘁𝘀 𝗶𝗻𝘁𝗲𝗹𝗶𝗴𝗲𝗻𝘁𝗲𝘀, 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝘇𝗮𝗰𝗶ó𝗻, 𝗵𝗮𝗰𝗸𝗶𝗻𝗴 é𝘁𝗶𝗰𝗼 𝘆 𝗱𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗼 𝗱𝗲 𝗽𝗿𝗼𝘆𝗲𝗰𝘁𝗼𝘀 𝗶𝗻𝗻𝗼𝘃𝗮𝗱𝗼𝗿𝗲𝘀.
 📍 𝗔𝗻𝗱𝗮𝗵𝘂𝗮𝘆𝗹𝗮𝘀, 𝗣𝗲𝗿ú</p>
             
             <div class="hero-info">
@@ -2019,12 +2019,12 @@
         // Form submission
         document.getElementById('registrationForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('¡Registro exitoso! Bienvenido a AnthZz Berrocal Academia. Revisa tu correo para activar tu cuenta y recibir más información sobre nuestros cursos y productos.');
+            alert('¡Registro exitoso! Bienvenido a BerMatMods 2.0 tu mayor aliado Revisa tu correo para activar tu cuenta y recibir más información sobre nuestros cursos y productos.');
         });
         
         // Google sign-in simulation
         document.querySelector('.google-signin').addEventListener('click', function() {
-            alert('El inició de seción con Google a fallado comomunicate con mi creador 👽AnthZz Berrocal👽 o vuelve a intentar en unis segundos se ke agradece su paciencia ❤️.');
+            alert('El inició de seción con Google a fallado comunícate con mi creador 👽AnthZz Berrocal👽 o vuelve a intentar en unos segundos se le agradece su paciencia ❤️.');
         });
         
         // Product and course card interactions
